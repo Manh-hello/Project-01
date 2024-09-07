@@ -41,10 +41,19 @@ a {
   margin-left: auto;
   margin-right: auto;
 }
-.header {
+.fixed-header {
+  background: #e6f0ff;
+  padding-top: 26px;
+  position: sticky;
+  top: -26px;
+  z-index: 1;
+}
+.hero-wrap {
   background: #e6f0ff;
   height: 100vh;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 .navbar ul {
   display: flex;
