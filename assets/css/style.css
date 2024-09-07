@@ -7,7 +7,11 @@
 html {
   font-size: 62.5%;
 }
+html,
 body {
+  scroll-behavior: smooth;
+}
+dy {
   font-size: 1.6rem;
   font-family: "Poppins", "sans-serif";
 }
@@ -50,10 +54,11 @@ a {
 }
 .hero-wrap {
   background: #e6f0ff;
-  height: 100vh;
+  height: calc(100vh - 90px);
   position: relative;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 .navbar ul {
   display: flex;
@@ -84,9 +89,6 @@ a {
 .navbar .action-btn {
   padding: 13px 16px;
   margin-left: 18px;
-}
-.hero {
-  margin-top: 130px;
 }
 .hero .info {
   width: 51%;
